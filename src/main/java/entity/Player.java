@@ -33,7 +33,7 @@ public class Player extends Entity {
   public boolean hasKey = false;
 
   private TileController tileController;
-  public int animalNumber = 1;
+  public int animalNumber = 2;
 
   public Player(GamePanel gp, KeyHandler keyH, TileController tileController) {
 

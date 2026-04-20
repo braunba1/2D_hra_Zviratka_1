@@ -79,6 +79,7 @@ public class MenuPanel extends JPanel {
       gamePanel.questManager.guessingQuest.completed = ds.isZoroCompleted;
       gamePanel.questManager.imageQuest.completed = ds.isBeaCompleted;
       gamePanel.player.movementHandler.questKeyCompleted = ds.isKeyQuestCompleted;
+      gamePanel.player.animalNumber = ds.animalCount;
       gamePanel.player.movementHandler.hasKey = ds.hasKey;
       cardLayout.show(mainPanel, "game");
       gamePanel.setUpObjects();

@@ -13,5 +13,6 @@ public class DataStorage implements Serializable {
   public boolean isBeaCompleted;
   public boolean isFireWomanCompleted;
   public boolean isZoroCompleted;
+  public int animalCount;
 }
 

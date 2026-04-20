@@ -133,7 +133,7 @@ public class CollisionChecker {
             if (gamePanel.npc[i].name.equals("Bea")) index = 2;
             if (gamePanel.npc[i].name.equals("Fire Woman")) index = 3;
             if (gamePanel.npc[i].name.equals("Lachtan")) index = 4;
-            if (gamePanel.npc[i].name.equals("Bad Animal")) index = 4;
+            if (gamePanel.npc[i].name.equals("Bad Animal")) index = 5;
           }
         }
       }

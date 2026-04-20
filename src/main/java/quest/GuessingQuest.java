@@ -67,7 +67,7 @@ public class GuessingQuest {
         gp.dialog.addMessage(
             "Hmmm. Splnila jsi všechno správně. Možná nejsi \n"
             +" jako všichni ostatní. Přidám se k tvojí výpravě.\n"
-                + "Když stiskneš klávesu C, prohodím se s tvým mazlíčkem.",
+                + "Stisknutím klávesy C se prohodím s tvým mazlíčkem.",
             "animal/BadAnimal_down1.png",
             "Zero"
         );

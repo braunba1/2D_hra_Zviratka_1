@@ -93,27 +93,18 @@ public class MovementHandler {
 
     }
 
-    if (pressedCount == 1) {
-      direction = lastDirection;
-      owner.direction = direction;
-      owner.speed = speed;
-    }
-
-    owner.collisionOn = false;
-
-    gamePanel.collisionChecker.checkCollision(owner);
-    int objectIndex = gamePanel.collisionChecker.checkObjectCollision(owner, true, false);
-    int npcIndex = gamePanel.collisionChecker.checkEntityCollision(owner, gamePanel.npc);
-
-    if (keyH.kolizeCancel) {
-
+    if (owner == gamePanel.player) {
       owner.collisionOn = false;
 
-    }
-    pickUpObject(objectIndex);
+      gamePanel.collisionChecker.checkCollision(owner);
+      int objectIndex = gamePanel.collisionChecker.checkObjectCollision(owner, true, false);
+      int npcIndex = gamePanel.collisionChecker.checkEntityCollision(owner, gamePanel.npc);
 
-    if(keyH.questStart){
-      pickUpQuest(npcIndex);
+      pickUpObject(objectIndex);
+
+      if (keyH.questStart) {
+        pickUpQuest(npcIndex);
+      }
     }
 
 
@@ -326,8 +317,8 @@ public class MovementHandler {
                   + "Ne? Nevadí, seženu si ji někde jinde.\n"
                   + ". . . .\n"
                   + "Jé! Kdo ty jsi? Nemáš náhodou rybu?",
-              "animal/BadAnimal_down1.png",
-              "Zoro"
+              "animal/Lachtan_down1.png",
+              "Azure"
           );
 
           gamePanel.showDialog = true;
@@ -418,6 +409,8 @@ public class MovementHandler {
             );
             gamePanel.showDialog = true;
             gamePanel.keyH.setDialog(gamePanel.dialog);
+            owner.collisionOn = false;
+
 
           }
 

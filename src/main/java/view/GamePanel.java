@@ -239,10 +239,11 @@ public class GamePanel extends JPanel implements Runnable {
 
       }
 
-   /*   if (!dialog.isComplete()) {
+      if (!dialog.isComplete()) {
         player.movementHandler.speed = 0;
         animalOfPlayer.movementHandler.speed = 0;
-      }*/
+
+      }
 
 
     }
@@ -277,15 +278,14 @@ public class GamePanel extends JPanel implements Runnable {
     dialog.addMessage(
         "Potřebuji, aby jsi došla ke mně domů. Nacházím se v\n"
             + "domečku, který je v severo-východní části lesa.\n" +
-            "Pro pohyb použij šipky. V případě, že by ses někde",
+               "Pro pohyb použij šipky. Až ke mně přijdeš",
         "NPC/mainTeller.png",
         "Genevieve"
     );
 
     dialog.addMessage(
 
-             "zasekla, přidrž klávesu N, pomůže ti projít nepřístupným\n" +
-            "terénem. Až ke mně přijdeš, zmáčkni klávesu Q. Zatím pa!",
+             "zmáčkni klávesu Q. Zatím pa!",
         "NPC/mainTeller.png",
         "Genevieve"
     );

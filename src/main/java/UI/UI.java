@@ -317,6 +317,7 @@ public class UI {
       ds.isBeaCompleted = gp.questManager.imageQuest.isCompleted();
       ds.isFireWomanCompleted = gp.questManager.rememberingQuest.isCompleted();
       ds.isZoroCompleted = gp.questManager.guessingQuest.isCompleted();
+      ds.animalCount = gp.player.animalNumber;
 
       oos.writeObject(ds);
     } catch (Exception e) {
@@ -347,8 +348,7 @@ public class UI {
     g2.drawString("ŠIPKY - pohyb postavy", x + 50, y + 90);
     g2.drawString("ENTER - další dialog", x + 50, y + 120);
     g2.drawString("Q - spuštění úkolu / dialogu ", x + 50, y + 150);
-    g2.drawString("C - změna zvířete (pouze po splnění úkolu Bea)", x + 50, y + 180);
-    g2.drawString("N - vypnutí kolize", x + 50, y + 210);
+    g2.drawString("C - změna zvířete (pouze po splnění úkolu Zoro)", x + 50, y + 180);
 
     g2.drawString("Klikni kamkoliv pro zavření", x + 120, y + 260);
   }

@@ -19,7 +19,6 @@ public class KeyHandler implements KeyListener {
   public boolean enterPressed;
   public AnimatedDialog dialog;
   public boolean questStart;
-  public boolean kolizeCancel;
   public boolean animalChanged = false;
   public int changeAnimal = 1;
 
@@ -51,10 +50,6 @@ public class KeyHandler implements KeyListener {
         break;
       case KeyEvent.VK_Q:
         questStart = true;
-        break;
-
-      case KeyEvent.VK_N:
-        kolizeCancel = true;
         break;
 
       case KeyEvent.VK_C:
@@ -89,9 +84,6 @@ public class KeyHandler implements KeyListener {
         break;
       case KeyEvent.VK_Q:
         questStart = false;
-        break;
-      case KeyEvent.VK_N:
-        kolizeCancel = false;
         break;
       case KeyEvent.VK_C:
         break;

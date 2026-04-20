@@ -75,14 +75,14 @@ public class AnimalOfPlayer extends Animal {
       }}
       else {
         try {
-          down1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_down1.png"));
-          down2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_down2.png"));
-          up1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_up1.png"));
-          up2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_up2.png"));
-          left1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_left1.png"));
-          left2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_left2.png"));
-          right1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_right1.png"));
-          right2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/Drak_right2.png"));
+          down1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_down1.png"));
+          down2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_down2.png"));
+          up1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_up1.png"));
+          up2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_up2.png"));
+          left1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_left1.png"));
+          left2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_left2.png"));
+          right1Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_right1.png"));
+          right2Animal = ImageIO.read(getClass().getClassLoader().getResourceAsStream("animal/BadAnimal_right2.png"));
         }
         catch (IOException e) {
           e.printStackTrace();
