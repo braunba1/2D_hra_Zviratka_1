@@ -1,4 +1,4 @@
-Téměř všechny obrázky v tomto projektu jsou výhradná práce autora.
+Téměř všechny obrázky v tomto projektu jsou výhradnou prácí autora.
 Obrázky, použité v úkolu od Bey, nejsou prací autora a jsou citovány níže:
 
 Ovce:
