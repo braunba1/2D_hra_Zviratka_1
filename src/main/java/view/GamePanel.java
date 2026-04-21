@@ -238,13 +238,13 @@ public class GamePanel extends JPanel implements Runnable {
         }
 
       }
-/*
+
       if (!dialog.isComplete()) {
         player.movementHandler.speed = 0;
         animalOfPlayer.movementHandler.speed = 0;
 
       }
-*/
+
 
     }
 

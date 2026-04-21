@@ -16,7 +16,7 @@ public class AnimatedDialog {
   private int currentMessageIndex = 0; // Index aktuální zprávy
   private String currentText = ""; // Text aktuálně zobrazený na obrazovce
   private int charIndex = 0; // Index aktuálního znaku v animaci
-  private int animationSpeed = 1; // Rychlost a
+  private int animationSpeed = 2; // Rychlost a
   // nimace (počet snímků na znak)
   private int frameCounter = 2; // Počítadlo snímků
 
