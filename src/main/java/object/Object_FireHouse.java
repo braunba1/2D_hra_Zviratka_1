@@ -9,7 +9,11 @@ public class Object_FireHouse extends SuperObject {
 
   public Object_FireHouse() {
     name = "Dům";
-    solidArea = new Rectangle(0, 0, 48, 48);
+    solidArea = new Rectangle();
+    solidArea.x = 0;
+    solidArea.y = 0;
+    solidArea.width = 48 * 3;
+    solidArea.height = 48 * 3;
 
     try {
 

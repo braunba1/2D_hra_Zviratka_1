@@ -55,6 +55,8 @@ public class QuestUI {
     gp.addMouseListener(new MouseAdapter() {
       public void mousePressed(MouseEvent e) {
 
+        if (!visible || questionIndex >= questions.length) return;
+
         if (yesButton.contains(e.getPoint())) {
           visible = true;
           accepted = true;

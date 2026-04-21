@@ -34,6 +34,10 @@ public class ImageChoiceQuest {
     int q = gp.questUI.questionIndex;
     gp.showDialog = false;
 
+    if (q < 0 || q >= correctAnswers.length) {
+      return;
+    }
+
     if (index == correctAnswers[q]) {
 
       gp.questUI.questionIndex++;
@@ -55,6 +59,7 @@ public class ImageChoiceQuest {
         gp.showDialog = true;
         gp.tileController.changeMap("maps/mapa_pozadi2.txt");
         completed = true;
+        gp.questUI.accepted = false;
       }
 
     } else {
